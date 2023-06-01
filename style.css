@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
@@ -14,7 +14,7 @@
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.light{
+.light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: 1px solid rgba(0, 0, 0, 0.5);
@@ -24,7 +24,7 @@
   --switch-bg-url: url(./assets/sun.svg);
 }
 
-body{
+body {
   /*
   background-image: url(./assets/bg-mobile-dark.jpg);
   background-repeat: no-repeat;
@@ -33,30 +33,29 @@ body{
   */
 
   /*background: color image repeat position/size;*/
-  background: var(--bg-url) no-repeat top center/cover ;
-
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
-
 /*Profile*/
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   /*margin: top right bottom left */
   margin: 56px auto 0px;
   padding: 0 24px;
 }
 
-#profile{
+#profile {
   text-align: center;
   padding: 24px;
 }
 
-#profile img { 
+#profile img {
   /*display inline - centraliza somente se o elemento pai estiver com text-align*/
   width: 112px;
 }
@@ -69,7 +68,7 @@ body * {
 
 /* Switch */
 
-#switch{
+#switch {
   display: flex;
   justify-content: center;
   position: relative;
@@ -77,7 +76,7 @@ body * {
 
   margin: 4px auto;
 }
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   border: 0;
@@ -92,19 +91,19 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   left: initial;
   right: 0;
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
-  border-radius: 9999px; 
+  border-radius: 9999px;
 }
 
 /* Links */
@@ -117,7 +116,7 @@ ul {
   padding: 24px 0;
 }
 
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,18 +131,17 @@ ul li a{
   text-decoration: none;
   font-weight: 500;
 
-  transition: background .2s;
+  transition: background 0.2s;
 }
 
 /* pseudo-selector */
-ul li a:hover{
+ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
-
 /*Social Links*/
-#social-links{
+#social-links {
   display: flex;
   justify-content: center;
   padding: 24px 0;
@@ -151,7 +149,7 @@ ul li a:hover{
   font-size: 24px;
 }
 
-#social-links a{
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,14 +157,13 @@ ul li a:hover{
   border-radius: 50%;
 
   transition: background 0.2s;
-
 }
 
-#social-links a:hover{
+#social-links a:hover {
   background-color: var(--highlight-color);
 }
 
-footer{
+footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
